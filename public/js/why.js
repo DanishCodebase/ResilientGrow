@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".why").owlCarousel({autoplay:!0,autoplayTimeout:2000,autoplayHoverPause:!1,items:1,stagePadding:20,center:!0,nav:!1,margin:50,dots:!0,loop:!0,responsive:{0:{items:1},480:{items:2},575:{items:2},768:{items:2},991:{items:3},1200:{items:4}}})});
