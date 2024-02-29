@@ -103,7 +103,7 @@ app.post("/makePayment", async (req, res) => {
       name: req.body.name,
       amount: parseInt(req.body.amount) * 100,
       redirectMode: "post",
-      mobileNumber: req.body.number,
+      mobileNumber: parseInt(req.body.number),
       paymentInstrument: {
         type: "PAY_PAGE",
       },
