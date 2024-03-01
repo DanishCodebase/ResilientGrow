@@ -785,13 +785,32 @@
             <option value="intermediate">Intermediate</option>
             <option value="experienced">Experienced</option>
           </select></label
-        ><button id="btnSubmit" type="submit">Let's succeed together</button>
+        ><button id="btnSubmit" class="btn-101" type="submit">Let's succeed together
+          <svg>
+            <defs>
+              <filter id="glow">
+                <fegaussianblur
+                  result="coloredBlur"
+                  stddeviation="5"
+                ></fegaussianblur>
+                <femerge>
+                  <femergenode in="coloredBlur"></femergenode>
+                  <femergenode in="coloredBlur"></femergenode>
+                  <femergenode in="coloredBlur"></femergenode>
+                  <femergenode in="SourceGraphic"></femergenode>
+                </femerge>
+              </filter>
+            </defs>
+            <rect />
+          </svg>
+        </button>
       </form>
       <a class="member1 mt-4">Already member?</a>
     </div>
     <img id="close" src="/icons/close.png" alt="" />
   </div>
 </section>
+
 <section class="pop-up" id="login">
   <div class="form-container">
     <div class="right-part">
@@ -822,7 +841,25 @@
             placeholder="Mobile Number"
             maxlength="10"
             required /></label
-        ><button id="btnSubmit" type="submit">Let's succeed together</button>
+        ><button id="btnSubmit" class="btn-101" type="submit">Let's succeed together
+          <svg>
+            <defs>
+              <filter id="glow">
+                <fegaussianblur
+                  result="coloredBlur"
+                  stddeviation="5"
+                ></fegaussianblur>
+                <femerge>
+                  <femergenode in="coloredBlur"></femergenode>
+                  <femergenode in="coloredBlur"></femergenode>
+                  <femergenode in="coloredBlur"></femergenode>
+                  <femergenode in="SourceGraphic"></femergenode>
+                </femerge>
+              </filter>
+            </defs>
+            <rect />
+          </svg>
+        </button>
       </form>
       <span class="new">New to Resilient Grow?</span
       ><a class="member"> Become member</a>

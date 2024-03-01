@@ -43,14 +43,6 @@ function showPopup() {
     (document.querySelector(".pop-up").style.visibility = "visible"),
     (document.body.style.overflow = "hidden");
 }
-function autoShowPopup() {
-  setTimeout(showPopup, 7000);
-}
-function showPopup() {
-  (document.querySelector(".pop-up").style.opacity = "1"),
-    (document.querySelector(".pop-up").style.visibility = "visible"),
-    (document.body.style.overflow = "hidden");
-}
 function hidePopup() {
   (document.querySelector(".pop-up").style.opacity = "0"),
     (document.querySelector(".pop-up").style.visibility = "hidden"),
@@ -67,17 +59,17 @@ function show() {
 // function autoShowPopup() {
 //   setTimeout(showPopup, 7e3);
 // }
-function showPopup() {
-  (document.querySelector(".pop-up").style.opacity = "1"),
-    (document.querySelector(".pop-up").style.visibility = "visible"),
-    (document.body.style.overflow = "hidden");
-}
-function hidePopup() {
-  (document.querySelector(".pop-up").style.opacity = "0"),
-    (document.querySelector(".pop-up").style.visibility = "hidden"),
-    (document.body.style.overflow = "");
-}
 
-window.addEventListener("load",autoShowPopup);
-document.getElementById("close").addEventListener("click",hidePopup);
+
+window.addEventListener("load", autoShowPopup);
+document.getElementById("close").addEventListener("click", hidePopup);
 show();
+
+document.querySelector("#cours").addEventListener("click", function () {
+  document.querySelector(".cpu").classList.toggle("d-none");
+});
+
+document.querySelector("#redirect").addEventListener("click", function () {
+  document.querySelector(".cpu").classList.toggle("d-none");
+  window.location.href = '/#course';
+});
