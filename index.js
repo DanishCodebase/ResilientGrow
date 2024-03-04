@@ -62,7 +62,6 @@ app.get(
 app.get("/submitted", (req, res) => {
   res.render("submitted.ejs");
 });
-
 // Payment code
 
 app.get("/pay", (req, res) => {
