@@ -196,3 +196,7 @@
         text-decoration: none;
         color: var(--color-fg);
       }
+
+      .Tagline{
+        font-size: 10px;
+      }
