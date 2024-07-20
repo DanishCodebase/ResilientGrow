@@ -130,5 +130,13 @@
   </div>
 </section>
 
+<script>
+  for(let i=0;i<5;i++){
+  document.querySelectorAll(".nav-link")[i].addEventListener("click",function(){
+    document.querySelector(".navbar-collapse").classList.remove("show");
+  })
+}
+</script>
+
 </body>
 </html>

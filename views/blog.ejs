@@ -78,9 +78,9 @@
             <li class="nav-item">
               <a class="nav-link" href="/#offer">Offerings</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="/#reviews">Reviews</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="/#course">Course</a>
             </li>
@@ -314,5 +314,21 @@
     </section>
 
     <%- include("partials/footer.ejs") %>
+
+    <script>
+      for (let i = 0; i < 5; i++) {
+        document
+          .querySelectorAll(".nav-link")
+          [i].addEventListener("click", function () {
+            document.querySelector(".navbar-collapse").classList.remove("show");
+          });
+      }
+
+      document
+        .querySelector(".navbar-toggler")
+        .addEventListener("click", function () {
+          document.querySelector(".navbar-collapse").classList.toggle("d-block");
+        });
+    </script>
   </body>
 </html>
