@@ -200,3 +200,6 @@
       .Tagline{
         font-size: 10px;
       }
+      #cours{
+        cursor: pointer;
+      }
